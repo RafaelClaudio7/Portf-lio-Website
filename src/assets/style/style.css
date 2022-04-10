@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Courier Prime', monospace;*/
+}
+/*Temporario*/
+body {
+    background-color: #161A1D;
+}
+
+/*Header personalização*/
+
+.header {
+    width: 100vw;
+}
+
+nav.navigation {
+    background-color: #161A1D;
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.nav-links {
+    display: flex;
+}
+
+ul.nav-links li {
+    font-size: 20px;
+    padding: 0 60px;
+}
+
+ul.nav-links li a {
+    color: #B1A7A6;
+    font-weight: 700;
+}
+
+nav a img.logo {
+    margin-left: 70px;
+}
+
+ul.nav-links li a:hover {
+    color: #ba181b;
+    font-weight: 800;
+    border-bottom: solid 2px #ba181b;
+}
+
+
+/* Home personalização*/
+section.home {
+    display: flex;
+    justify-content: space-around;
+    background-color: #161A1D;
+    padding-top: 100px;
+    width: 100%;
+}
+
+div.bg-gradient {
+    background-image: linear-gradient(#E5383B, #0b090a);
+    border-radius: 104px 104px 0 0;
+}
+
+div.descricao {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    width: 37%;
+}
+
+h1.nome-destaque {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#E5383B, #660708);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3.prof{
+    font-family: 'Courier Prime', monospace;
+    font-size: 32px;
+    color: #F5F3F4;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+p.resumo {
+    color: #B1A7A6;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+div.links-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+i.fa-github {
+    font-size: 60px;
+    color:#ba181b;
+    margin-bottom: 40px;
+}
+
+i.fa-linkedin-square {
+    font-size: 60px;
+    color:#ba181b;
+}
+
+div.links-home i:hover {
+    color: #660708;
+}
+
+/* Projetos - section*/
+
+/* Responsividade - pontos de quebra*/
+@media only screen and (max-width: 900px) {
+   
+    
+    nav.navigation {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .logo {
+        margin-top: 20px;
+    }
+
+    ul.nav-links li {
+        font-size: 18px;  
+    }
+
+    /* Home Responsivo*/
+    section.home {
+        flex-direction: column;
+        padding-top: 20px;
+    } 
+
+    .perfil-foto {
+        align-self: center;
+    }
+
+    div.descricao {
+        margin: auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    h1.nome-destaque {
+        font-size: 56px;
+    }
+
+    h3.prof {
+        font-size: 24px;
+    }
+
+    div.links-home {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    div.links-home i{
+        padding: 30px 20px;
+    }
+
+    
+
+}
+
+@media only screen and (max-width: 600px) {
+    ul.nav-links {
+        flex-direction: column;
+        padding-bottom: 10px;
+    } 
+    ul.nav-links li {
+        font-size: 18px;
+        padding: 5px 0;
+        margin-top: 20px;
+    }
+
+    nav a img.logo {
+        margin: 30px 0 0 0;
+    }
+
+    /* Home Responsivo*/
+
+    section.home {
+        padding-top: 30px;
+    } 
+
+    h1.nome-destaque {
+        font-size: 42px;
+    }
+
+    h3.prof {
+        font-size: 18px;
+    }
+
+    div.links-home i{
+        padding: 20px 15px;
+    }
+
+    p.resumo {
+        font-size: 14px;
+    }
+
+    i.icones {
+        font-size: 40px;
+    }
+    
+}
+
+@media only screen and (max-width: 540px) {
+    ul.nav-links li {
+        font-size: 16px;
+        padding: 5px 0;
+        margin-top: 15px;
+    }
+
+    h1.nome-destaque {
+        font-size: 32px;
+    }
+
+    h3.prof {
+        font-size: 16px;
+    }
+
+    div.links-home i{
+        padding: 20px 15px;
+    }
+
+    p.resumo {
+        font-size: 14px;
+    }
+
+    i.icones {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    ul.nav-links li {
+        font-size: 14px;
+        padding: 5px 0;
+        margin-top: 15px;
+    }
+}
