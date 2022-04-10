@@ -143,6 +143,7 @@ div.links-home i:hover {
 
     .perfil-foto {
         align-self: center;
+        overflow-x: hidden;
     }
 
     div.descricao {
