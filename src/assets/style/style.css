@@ -88,7 +88,10 @@ h3.prof{
     color: #F5F3F4;
     font-weight: bold;
     margin-top: 15px;
+    cursor: text;
 }
+
+
 
 p.resumo {
     color: #B1A7A6;
