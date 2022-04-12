@@ -7,6 +7,7 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
     /*font-family: 'Courier Prime', monospace;*/
 }
 /*Temporario*/
@@ -122,6 +123,76 @@ div.links-home i:hover {
 
 /* Projetos - section*/
 
+section.projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    width: 100%;
+
+}
+
+h1.titulo-secao {
+    font-size: 40px;
+    color: #B1A7A6;
+    font-weight: bold;
+}
+
+button.btn-sel {
+    background-color: #161A1D;
+    color: #fff;
+    margin-top: 20px;
+    margin-right: 25px;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: solid 1px #fff;
+}
+
+button.btn-sel:hover {
+    background-color: #0b090a;
+}
+
+button.btn-ativo {
+    background-color: #660708;
+}
+
+div.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.card-projeto {
+    height: 350px;
+    width: 280px;
+    background-color: #0b090a;
+    margin: 100px 30px 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.img-projeto {
+    height: 200px;
+    background-color: #fff;
+    width: 100%;
+
+}
+
+h3.titulo-projeto {
+    color: #B1A7A6;
+    font-size: 22px;
+}
+
+a.link-gitprojeto h3:hover {
+    color: #ba181b;
+}
+
+p.descricao-projeto {
+    color: #fff;
+    font-size: 14px;
+}
 /* Responsividade - pontos de quebra*/
 @media only screen and (max-width: 900px) {
    
@@ -175,7 +246,21 @@ div.links-home i:hover {
         padding: 30px 20px;
     }
 
+    /*projetos section - responsive */
+    section.projetos {
+        margin-top: 100px;
+    }
+
+    div.cards-container {
+        justify-content: center;
+    }
     
+
+    button.btn-sel {
+        margin-right: 20px;
+        font-size: 16px;
+        padding: 15px;
+    }
 
 }
 
@@ -219,6 +304,21 @@ div.links-home i:hover {
     i.icones {
         font-size: 40px;
     }
+
+
+    section.projetos {
+        margin-top: 50px;
+    }
+
+    button.btn-sel {
+        font-size: 14px;
+        padding: 14px;
+    }
+
+    h1.titulo-secao {
+        font-size: 30px;
+    }
+
     
 }
 
@@ -257,6 +357,11 @@ div.links-home i:hover {
     .foto-personal {
         width: 300px;
     }
+
+    button.btn-sel {
+        font-size: 10px;
+        padding: 10px;
+    }
 }
 
 @media only screen and (max-width: 380px) {
@@ -264,5 +369,10 @@ div.links-home i:hover {
         font-size: 14px;
         padding: 5px 0;
         margin-top: 15px;
+    }
+
+    button.btn-sel {
+        font-size: 8px;
+        padding: 8px;
     }
 }
