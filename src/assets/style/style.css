@@ -10,8 +10,19 @@
     /*font-family: 'Courier Prime', monospace;*/
 }
 /*Temporario*/
-body {
-    background-color: pink;
+html {
+    scroll-behavior: smooth;
+  }
+::-webkit-scrollbar{ 
+    /* 1 */ 
+    background-color: #161A1D;
+
+}
+
+::-webkit-scrollbar-thumb { 
+    /* 5 */ 
+    background-color: #202529;
+    border-radius: 10px;
 }
 
 /*Header personalização*/
@@ -103,13 +114,13 @@ div.links-home {
 }
 
 i.fa-github {
-    font-size: 60px;
+    font-size: 80px;
     color:#ba181b;
     margin-bottom: 40px;
 }
 
 i.fa-linkedin-square {
-    font-size: 60px;
+    font-size: 80px;
     color:#ba181b;
 }
 
