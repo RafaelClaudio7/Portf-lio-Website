@@ -18,8 +18,3 @@ typeWriter();
 
 
 
-const btnTodos = document.getElementById('btn-todos');
-console.log(btnTodos);
-if(btnTodos.classList.contains('btn-ativo')) {
-    
-}
