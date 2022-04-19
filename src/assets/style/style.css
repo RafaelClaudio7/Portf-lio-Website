@@ -223,6 +223,7 @@ div.container-skills {
   justify-content: center;
   flex-wrap: wrap;
   padding-top: 60px;
+  width: 60%;
 }
 
 div.stack-detalhes {
@@ -515,6 +516,10 @@ p.copy a {
   .devicon {
     font-size: 50px;
   }
+
+  p.level-description {
+    font-size: 10px;
+  }
 }
 
 @media only screen and (max-width: 380px) {
@@ -548,5 +553,17 @@ p.copy a {
     margin-top: 30px;
     color: #b1a7a6;
     font-size: 16px;
+  }
+
+  .devicon {
+    font-size: 30px;
+  }
+
+  p.level-description {
+    font-size: 8px;
+  }
+
+  .level-stars {
+    font-size: 10px;
   }
 }

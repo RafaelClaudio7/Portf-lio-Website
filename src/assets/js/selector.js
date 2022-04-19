@@ -3,7 +3,6 @@ const allBtns = document.querySelectorAll(".btn-sel");
 const arrBtns = Array.from(allBtns);
 const cardsProj = document.querySelectorAll(".card-projeto");
 const arr = Array.from(cardsProj);
-console.log(arr[0])
 
 
 btnAll.addEventListener("click", (e) => {
@@ -18,7 +17,6 @@ btnAll.addEventListener("click", (e) => {
   for(let i in arr) {
     if(arr[i].classList.contains('card-projeto')){
         arr[i].setAttribute('style', 'display: flex;');
-        console.log(arr[i]);
     }
     else {
         arr[i].setAttribute('style', 'display: none;');
@@ -45,7 +43,6 @@ btnHtmlCssJs.addEventListener("click", (e) => {
   for(let i in arr) {
     if(arr[i].classList.contains('htmlcssjs')){
         arr[i].setAttribute('style', 'display: flex;');
-        console.log(arr[i]);
     }
     else {
         arr[i].setAttribute('style', 'display: none;');
@@ -67,7 +64,6 @@ btnReact.addEventListener("click", (e) => {
   for(let i in arr) {
     if(arr[i].classList.contains('react')){
         arr[i].setAttribute('style', 'display: flex;');
-        console.log(arr[i]);
     }
     else {
         arr[i].setAttribute('style', 'display: none;');
