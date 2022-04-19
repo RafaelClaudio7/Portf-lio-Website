@@ -180,18 +180,16 @@ div.cards-container {
 div.card-projeto {
   height: 350px;
   width: 280px;
-  background-color: #0b090a;
+  background-color: #15181b;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 30px 30px 0 30px;
+  border-radius: 20px;
+  box-shadow: 1px 3px #0b090a;
 }
 
-div.img-projeto {
-  height: 200px;
-  background-color: #fff;
-  width: 100%;
-}
+
 
 h3.titulo-projeto {
   color: #b1a7a6;
@@ -205,6 +203,7 @@ a.link-gitprojeto h3:hover {
 p.descricao-projeto {
   color: #fff;
   font-size: 14px;
+  text-align: center;
 }
 
 /* Section Habilidades */

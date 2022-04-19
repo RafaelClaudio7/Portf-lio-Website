@@ -1,4 +1,3 @@
-
 let i = 0;
     const tituloProf = document.querySelector(".digitacao");
     let frase = document.querySelector(".digitacao").innerHTML;
@@ -16,3 +15,11 @@ let i = 0;
     }
 
 typeWriter();
+
+
+
+const btnTodos = document.getElementById('btn-todos');
+console.log(btnTodos);
+if(btnTodos.classList.contains('btn-ativo')) {
+    
+}
